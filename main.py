@@ -38,6 +38,13 @@ while running:
 # appliquer l'image de mon joueur
   screen.blit(game.player.image, game.player.rect)
 
+
+# recuperer les projectiles du joueur
+  for projectile in game.player.all_projectiles:
+    projectile.move()
+
+
+
 # appliquer l'ensemble des images de mon groupe de projectiles
   game.player.all_projectiles.draw(screen) 
 
