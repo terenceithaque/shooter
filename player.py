@@ -18,7 +18,7 @@ class Player(pygame.sprite.Sprite):
 
   def launch_projectile(self):
     # creer une nouvelle instance de la classe Projectile
-    self.all_projectiles.add(Projectile())
+    self.all_projectiles.add(Projectile(self))
 
 
       
